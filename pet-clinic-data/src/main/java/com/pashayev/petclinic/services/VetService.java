@@ -1,15 +1,6 @@
 package com.pashayev.petclinic.services;
 
-import com.pashayev.petclinic.model.Pet;
+import com.pashayev.petclinic.model.Vet;
 
-import java.util.Set;
-
-public interface VetService {
-
-    public Set<Pet> findAll();
-
-    public Pet save(Pet pet);
-
-    public Pet findById(Long id);
-
+public interface VetService extends CrudService<Vet, Long> {
 }
