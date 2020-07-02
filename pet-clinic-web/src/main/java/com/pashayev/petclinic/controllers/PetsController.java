@@ -5,14 +5,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
-public class IndexController {
+@RequestMapping("/pets/")
+public class PetsController {
 
     @RequestMapping({"", "index","index.html"})
     public String showPets(Model model) {
-        model.addAttribute("data", "Welcome Index Page");
-        return "index";
+        model.addAttribute("pets", "Welcome Pets Page");
+        return "pets/index";
     }
 
 }
-

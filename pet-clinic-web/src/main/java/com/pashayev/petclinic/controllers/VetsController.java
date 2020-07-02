@@ -5,9 +5,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class VetController {
+@RequestMapping("/vets")
+public class VetsController {
 
-    @RequestMapping({"/vets", "/vets/index","/vets/index.html"})
+    @RequestMapping({"", "index","index.html"})
     public String showVets(Model model) {
         model.addAttribute("vets", "Welcome Vets Page");
         return "vets/index";
