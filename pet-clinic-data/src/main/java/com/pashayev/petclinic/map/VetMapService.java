@@ -1,11 +1,11 @@
 package com.pashayev.petclinic.map;
 
 import com.pashayev.petclinic.model.Vet;
-import com.pashayev.petclinic.services.CrudService;
+import com.pashayev.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetService extends AbstractMapService<Vet,Long> implements CrudService<Vet,Long> {
+public class VetMapService extends AbstractMapService<Vet,Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
